@@ -11,9 +11,177 @@
       <defs>
       <path id="Path_440" d="m355.55806,26.67908c77.16443,217.75782 -356.68844,132.13693 -316.06661,591.71916c153.83245,545.11426 790.47004,206.35276 740.054,854.77046c-31.64836,123.2837 -146.90235,276.6134 -625.84238,230.674c-229.95855,-50.4664 -121.34094,544.3187 -22.895,642.0533c177.00145,175.7225 265.11295,8.9322 497.25982,138.5774c168.87195,94.3086 184.12246,714.8868 -69.22951,686.9277" fill="none"/>
       </defs>
-      <use xlink:href="#Path_440" stroke="#000" stroke-width="2" stroke-dasharray="8"/>
-      <use id="theFill" xlink:href="#Path_440" stroke="#000" stroke-width="3"/>
+      <use xlink:href="#Path_440" stroke="#FFF" stroke-width="2" stroke-dasharray="8"/>
+      <use id="theFill" xlink:href="#Path_440" stroke="#FFF" stroke-width="3"/>
     </svg>
+    
     
     </div>
        </div>
+
+       <div id="carouselmovies">
+
+        <div class="hideLeft">
+         <img src="https://archive.org/download/movie-posters-wallpapers/Movie%20Poster%201.jpg">
+       </div>
+ 
+       <div class="prevLeftSecond">
+         <img src="https://archive.org/download/movie-posters-wallpapers/Movie%20Poster%20100.jpg">
+       </div>
+ 
+       <div class="prev">
+         <img src="https://c4.wallpaperflare.com/wallpaper/675/275/718/joker-2019-movie-joker-joaquin-phoenix-actor-men-hd-wallpaper-preview.jpg">
+       </div>
+ 
+       <div class="selected">
+         <img src="https://c4.wallpaperflare.com/wallpaper/764/590/391/inception-leonardo-dicaprio-movie-posters-2400x3500-entertainment-movies-hd-art-wallpaper-preview.jpg">
+       </div>
+ 
+       <div class="next">
+         <img src="https://c4.wallpaperflare.com/wallpaper/274/72/985/john-wick-movies-movie-poster-wallpaper-preview.jpg">
+       </div>
+ 
+       <div class="nextRightSecond">
+         <img src="https://c4.wallpaperflare.com/wallpaper/763/245/276/suicide-squad-margot-robbie-dc-comics-harley-quinn-wallpaper-preview.jpg">
+       </div>
+ 
+       <div class="hideRight">
+         <img src="https://c4.wallpaperflare.com/wallpaper/1022/525/87/movies-the-lord-of-the-rings-aragorn-viggo-mortensen-movie-posters-posters-the-return-of-the-king-entertainment-movies-hd-art-wallpaper-preview.jpg">
+       </div>
+ 
+     </div>
+
+
+     <div id="carouselmusic">
+
+      <div class="hideLeft">
+       <img src="https://archive.org/download/TaylorSwiftreputation_201909/%21reputation.png">
+     </div>
+
+     <div class="prevLeftSecond">
+       <img src="https://archive.org/download/ArcticMonkeysFavouriteWorstNightmare/Favourite%20Worst%20Nightmare.png">
+     </div>
+
+     <div class="prev">
+       <img src="https://archive.org/download/ArcticMonkeysWhateverPeopleSayIAmThatsWhatImNot/Whatever%20People%20Say%20I%20Am%2C%20That%27s%20What%20I%27m%20Not.png">
+     </div>
+
+     <div class="selected">
+       <img src="https://archive.org/download/LanaDelReyParadise/Paradise.png">
+     </div>
+
+     <div class="next">
+       <img src="https://archive.org/download/ColdplayParachutes/Parachutes.png">
+     </div>
+
+     <div class="nextRightSecond">
+       <img src="https://archive.org/download/RadioheadInRainbowsDisk2/In%20Rainbows%20Disk%202.png">
+     </div>
+
+     <div class="hideRight">
+       <img src="https://archive.org/download/RadioheadPabloHoney/Pablo%20Honey.png">
+     </div>
+
+   </div>
+
+   <div id="carouselgames">
+
+    <div class="hideLeft">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Dead_Space_2_Box_Art.jpg/220px-Dead_Space_2_Box_Art.jpg">
+    </div>
+
+    <div class="prevLeftSecond">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Far_Cry_3_PAL_box_art.jpg/220px-Far_Cry_3_PAL_box_art.jpg">
+    </div>
+
+    <div class="prev">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Mass_Effect_3_Game_Cover.jpg/220px-Mass_Effect_3_Game_Cover.jpg">
+    </div>
+
+    <div class="selected">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Need_for_Speed_Rivals_cover.jpg/220px-Need_for_Speed_Rivals_cover.jpg">
+    </div>
+
+    <div class="next">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Crysis_3_cover.jpg/220px-Crysis_3_cover.jpg">
+    </div>
+
+    <div class="nextRightSecond">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Assassin%27s_Creed_Valhalla_cover.jpg/220px-Assassin%27s_Creed_Valhalla_cover.jpg">
+    </div>
+
+    <div class="hideRight">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a5/Grand_Theft_Auto_V.png/220px-Grand_Theft_Auto_V.png">
+    </div>
+
+ </div>
+ 
+     
+ 
+     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+     <script>
+      function moveToSelected(element) {
+
+if (element == "next") {
+  var selected = $(".selected").next();
+} else if (element == "prev") {
+  var selected = $(".selected").prev();
+} else {
+  var selected = element;
+}
+
+var next = $(selected).next();
+var prev = $(selected).prev();
+var prevSecond = $(prev).prev();
+var nextSecond = $(next).next();
+
+$(selected).removeClass().addClass("selected");
+
+$(prev).removeClass().addClass("prev");
+$(next).removeClass().addClass("next");
+
+$(nextSecond).removeClass().addClass("nextRightSecond");
+$(prevSecond).removeClass().addClass("prevLeftSecond");
+
+$(nextSecond).nextAll().removeClass().addClass('hideRight');
+$(prevSecond).prevAll().removeClass().addClass('hideLeft');
+
+}
+
+// Eventos teclado
+$(document).keydown(function(e) {
+  switch(e.which) {
+      case 37: // left
+      moveToSelected('prev');
+      break;
+
+      case 39: // right
+      moveToSelected('next');
+      break;
+
+      default: return;
+  }
+  e.preventDefault();
+});
+
+$('#carouselmovies div').click(function() {
+moveToSelected($(this));
+});
+
+$('#carouselmusic div').click(function() {
+moveToSelected($(this));
+});
+
+$('#carouselgames div').click(function() {
+moveToSelected($(this));
+});
+
+$('#prev').click(function() {
+moveToSelected('prev');
+});
+
+$('#next').click(function() {
+moveToSelected('next');
+});
+
+     </script>
